@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.dagger2demo.databinding.ActivityMainBinding;
+import com.example.dagger2demo.di.inerfacedemo.InterFace_Activity;
 import com.example.dagger2demo.di.simple.SimpleDepency_Activity;
 import com.example.dagger2demo.di.thirdparty.ThirdParty_Activity;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId())
         {
             case R.id.btn_interface:
-
+                intent = new Intent(this, InterFace_Activity.class);
                 break;
             case R.id.btn_thirdparty:
                 intent = new Intent(this, ThirdParty_Activity.class);
