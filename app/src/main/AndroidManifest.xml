@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".di.inerfacedemo.InterFace_Activity"></activity>
+        <activity android:name=".di.compontentbuilder.CompontenBuilderActivity"></activity>
+        <activity android:name=".di.dyanmicvalue.DyanmicValueDepency_Activity" />
+        <activity android:name=".di.inerfacedemo.InterFace_Activity" />
         <activity android:name=".di.thirdparty.ThirdParty_Activity" />
         <activity android:name=".di.simple.SimpleDepency_Activity" />
         <activity android:name=".MainActivity">

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.dagger2demo.databinding.ActivityMainBinding;
+import com.example.dagger2demo.di.compontentbuilder.CompontenBuilderActivity;
+import com.example.dagger2demo.di.dyanmicvalue.DyanmicValueDepency_Activity;
 import com.example.dagger2demo.di.inerfacedemo.InterFace_Activity;
 import com.example.dagger2demo.di.simple.SimpleDepency_Activity;
 import com.example.dagger2demo.di.thirdparty.ThirdParty_Activity;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         activityMainBinding.btnInterface.setOnClickListener(this);
         activityMainBinding.btnSimple.setOnClickListener(this);
         activityMainBinding.btnThirdparty.setOnClickListener(this);
+        activityMainBinding.btnDynamic.setOnClickListener(this);
+        activityMainBinding.btnCompontentBuilder.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_simple:
                 intent = new Intent(this, SimpleDepency_Activity.class);
+                break;
+            case R.id.btn_dynamic:
+                intent = new Intent(this, DyanmicValueDepency_Activity.class);
+                break;
+            case R.id.btn_compontent_builder:
+                intent = new Intent(this, CompontenBuilderActivity.class);
                 break;
         }
         if(intent!=null)
